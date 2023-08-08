@@ -2,6 +2,7 @@ body
 {
     background-image: url("https://wallpaperaccess.com/full/1397755.jpg");
 }
+
 .flip-card {
     background-color: transparent;
     width: 20vw;
@@ -103,7 +104,6 @@ video {
     color: rgb(234, 234, 234);
     font-weight: 700;
     transition: 0.6s;
-   
   }
   
   .nav-btn:active {
@@ -123,6 +123,7 @@ video {
     justify-items: center;
     z-index: 1;
     background-color: black;
+    
   }
   #navigation-bar
   {
@@ -154,10 +155,36 @@ video {
 }
 #logo-img
 {
-    position: relative;
-    left: 30vw;
-    height: 4rem;
+    position: absolute;
+    left: 80vw;
+    height: 2rem;
+    animation-name: logomoving;
+    animation-duration: 1s;
+    animation-iteration-count: infinite ;
+ 
 }
+
+
+@keyframes logomoving {
+   0%   {height: 4rem;}
+   50%   {height: 4.2rem;}
+   100% {height: 4rem;}
+ }
+ #gamepro-headline
+ {
+    animation-name: switching-color-headline;
+    animation-duration: 1s;
+    animation-iteration-count: infinite ;
+ 
+ }
+
+ @keyframes switching-color-headline {
+    0%   {color: blue; }
+    25%   {color: red; }
+    50%  {color: rgb(0, 255, 0); }
+    75%   {color: red; }
+    100% {color: blue; }
+  }
 #intro
 {
     display: block;
@@ -189,9 +216,11 @@ video {
 /*social buttons*/
 #contact-us
 {
-    display: block;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    margin: 10vw;
+    margin: 5vw;
 }
 .empty-line
 {
@@ -285,3 +314,6 @@ video {
     fill: #c13584;
   }
   /*social buttons*/
+
+
+  

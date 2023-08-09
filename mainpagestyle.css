@@ -115,6 +115,7 @@ video {
     background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(255, 81, 0, 0.873) 60%);
     color: rgb(103, 1, 134);
   }
+
   #headline
   {
     position: fixed;
@@ -192,6 +193,7 @@ video {
 #intro video
 {
     position: static;
+    height: 60vh;
     width: 60vw;
     border: 2px solid #f1f1f1;
 }
@@ -202,7 +204,7 @@ video {
 }
  @keyframes videoflex {
     0%   {}
-    100% {width: 70vw;}
+    100% {width: 70vw; height: 70vh;}
   }
   #intro video:hover
   {
@@ -464,13 +466,7 @@ label
 {
     width: 18vw;
 }
-.buy-now-container
-{
-    /* position: relative;
-    display: flex;
-    justify-content: flex-start;
-    justify-items: center; */
-}
+
 }
 @media only screen and (min-width:525px)
 {

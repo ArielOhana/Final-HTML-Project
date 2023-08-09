@@ -315,5 +315,132 @@ video {
   }
   /*social buttons*/
 
+/*select platform*/
 
+
+
+.platform-container {
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   
+    gap: 1.3vw;
+  }
+  
+  .platform-container .boxes {
+    width: 10vh;
+    height: 10vh;
+    background-color: #313638;
+    transition: 0.3s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20%;
+    border: 3.5px solid #f1f1f1;
+
+  }
+  .platform-container img
+  {
+  width: 6vh;
+  height:6vh;
+  }
+  
+  .platform-container #box1:hover {
+    background-color: #ffffff;
+  }
+  
+  .platform-container #box2:hover {
+    background-color: #000000;
+  }
+  
+  .platform-container #box3:hover {
+    background-color: #00aa00;
+  }
+  
+  .platform-container #box4:hover {
+    background-color: #0000aa;
+  }
+
+
+
+
+.price
+{
+    font-size: 2.3rem;
+    font-family: cursive;
+    text-align: center;
+    color: white;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    visibility: hidden;
+    right: 0vw;
+}
+#ps4:checked + label .boxes{
+    background-color: #ffffff;
+}
+#ps4:checked + label .price{
+    visibility: visible;
+}
+#ps5:checked + label .boxes{
+    background-color: #000000;
+}
+#ps5:checked + label .price{
+    visibility: visible;
+}
+#xbox:checked + label .boxes{
+    background-color: #00aa00;
+}
+#xbox:checked + label .price{
+    visibility: visible;
+}
+#pc:checked + label .boxes{
+    background-color: #0000aa;
+}
+#pc:checked + label .price{
+    visibility: visible;
+}
+/*select platform*/
+  /*buy now*/
+  .buy-now-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    left:20vw;
+    top: 10vw;
+    gap: 1.3vw;
+    padding: 6rem 0;
+   
+  }
+  .buy-now-container #box5:hover {
+    background-color: #00ff00aa;
+  }
+  .buy-now-container .boxes {
+    width: 20vh;
+    height: 10vh;
+    border-radius: 20%;
+    border: 5px solid #ffffff;
+    background-color: #00ff0066;
+    transition: 0.3s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .buy-now-container img
+  {
+  width: 6vh;
+  height:6vh;
+  }
+
+  #buy-now:checked + label .boxes{
+    background-color: #00ff00;
+}
+
+  /*buy now*/

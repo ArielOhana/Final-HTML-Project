@@ -444,3 +444,38 @@ video {
 }
 
   /*buy now*/
+
+label
+{
+    width: 23vw;
+}
+/*media squary*/
+@media only screen and (max-width:525px)
+{
+.platform-container
+{
+    gap: 0px;
+}
+.platform-container .boxes
+{
+    scale: 0.5;
+}
+label
+{
+    width: 18vw;
+}
+.buy-now-container
+{
+    /* position: relative;
+    display: flex;
+    justify-content: flex-start;
+    justify-items: center; */
+}
+}
+@media only screen and (min-width:525px)
+{
+label
+{
+    width: auto;
+}
+}

@@ -136,8 +136,8 @@ video {
   
   .nav-btn:hover {
     background: rgb(2,29,78);
-    background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(255, 81, 0, 0.873) 60%);
-    color: rgb(103, 1, 134);
+    background: linear-gradient(90deg, rgb(255, 0, 0) 20%, rgba(0, 255,0)40%, rgba(0,0,255) 110%);
+    color: rgb(0, 0, 0);
   }
 .text-before-cards
 {

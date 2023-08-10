@@ -13,12 +13,26 @@ body
     animation-duration: 2s;
     animation-iteration-count: 1 ;
     animation-fill-mode: forwards;
+    
 }
 .flip-card-accessories {
     background-color: transparent;
     width: 15vw;
     height: 15vw;
+    border-radius: 20%;
+    border: 2px solid #f1f1f1;
+
+    
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  .flip-card-accessories img
+  {
+    border-radius: 20%;
+  }
+  .flip-card-accessories video
+  {
+    border-radius: 20%;
+
   }
   .flip-card-accessories:hover .flip-card-inner {
     transform: rotateY(180deg);

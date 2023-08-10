@@ -1,6 +1,7 @@
 body
 {
-    background-image: url("https://wallpaperaccess.com/full/1397755.jpg");
+    background-color: #090909;
+    /* background-image: url("https://wallpaperaccess.com/full/1397755.jpg"); */
 }
   @keyframes accessories {
     0%   {}
@@ -186,7 +187,7 @@ video {
 }
 .text
 {
-    font-size: 1.3rem;
+    font-size: 1.8vw;
     font-family: cursive;
     text-align: center;
     color: white;

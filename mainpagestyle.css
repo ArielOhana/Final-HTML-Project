@@ -2,6 +2,29 @@ body
 {
     background-image: url("https://wallpaperaccess.com/full/1397755.jpg");
 }
+  @keyframes accessories {
+    0%   {}
+    100% {width: 20vw;}
+  }
+  .flip-card-accessories:hover
+  {
+    animation-name: accessories;
+    animation-duration: 2s;
+    animation-iteration-count: 1 ;
+    animation-fill-mode: forwards;
+}
+.flip-card-accessories {
+    background-color: transparent;
+    width: 15vw;
+    height: 15vw;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  .flip-card-accessories:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+
+
 
 .flip-card {
     background-color: transparent;
@@ -463,6 +486,55 @@ video {
 }
 
   /*buy now*/
+
+
+
+
+/*accessories*/
+.showcase {
+    display: flex;
+    width: 60vw;
+    height: 30vw;
+    background: #44444444;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px white solid;
+}
+.tocenter
+{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.showcase img {
+    position: relative;
+    width: 33%;
+    height: 50%;
+    object-fit: cover;
+    
+}
+.showcase img:active  {
+    
+    position: absolute;
+
+   
+    object-fit: cover;
+    animation-name: imgflex;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1 ;
+    animation-fill-mode: forwards;
+}
+.showcase img:active ~ img
+{
+    display: none;
+}
+@keyframes imgflex {
+    0%   {}
+    100% { width: 60vw;  height: 30vw;}
+  }
+/*accessories*/
 
 label
 {
